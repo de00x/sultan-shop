@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  margin-top: 30px;
+  border-top: 2px solid #3f4e652f;
+  border-bottom: 2px solid #3f4e652f;
+}
+.catalog,
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 75%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14.5px;
+  color: #3f4e65;
+  & a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3f4e65;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14.5px;
+  }
+  & svg {
+    margin-right: 5px;
+  }
+}
+.catalog {
+  cursor: pointer;
+  border-right: 1px dotted #3f4e652f;
+}
+.search {
+  cursor: pointer;
+}

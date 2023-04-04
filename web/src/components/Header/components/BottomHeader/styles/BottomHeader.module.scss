@@ -1,0 +1,164 @@
+.bottomHeaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 109px;
+  border-bottom: 1px solid rgba(63, 78, 101, 0.168627451);
+}
+.sultanLogoContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 30px;
+  height: 100%;
+}
+.catalogBtnContainer,
+.priceListBtnContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  & button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 192px;
+    height: 59px;
+    border: none;
+    border-radius: 79px;
+    background-color: #ffc85e;
+    cursor: pointer;
+    transition: 0.2s background-color ease-in-out;
+    color: #fff;
+    font-size: 15px;
+    &:hover {
+      background-color: #ffb92e;
+    }
+    & svg {
+      margin-left: 15px;
+    }
+  }
+}
+.searchContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  margin: 0 40px 0 20px;
+  & input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 263px;
+    height: 59px;
+    border-radius: 36px;
+    padding: 0 15px;
+    color: #aba9a9;
+    background-color: #ededed;
+    transition: 0.2s background-color ease-in-out;
+    &::placeholder {
+      font-size: 15px;
+      color: #aba9a9;
+    }
+    &:focus {
+      background-color: #e0dddd;
+    }
+  }
+}
+.searchSvgContainer {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 39px;
+  height: 39px;
+  border-radius: 1000px;
+  right: 10px;
+  background-color: #ffc85e;
+}
+.orderCallContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.orderCallLeftBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 10px;
+  & div:nth-child(1) {
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  & div:nth-child(2) {
+    font-size: 14px;
+    color: #3f4e656e;
+  }
+  & div:nth-child(3) {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #3f4e656e;
+    transition: 0.2s color ease-in-out;
+    &:hover {
+      color: #3f4e65a5;
+    }
+  }
+}
+.priceListBtnContainer {
+  margin: 0 50px;
+}
+.cartContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.cartLeftBlock {
+  position: relative;
+  padding-top: 10px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.cartCurrentItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 100px;
+  font-size: 12px;
+  top: 2px;
+  right: -12px;
+  font-weight: 500;
+  border: 2.5px solid #fff;
+  color: #fff;
+  background-color: #ffc85e;
+}
+.cartRightBlock {
+  & div:nth-child(1) {
+    font-size: 14px;
+    color: rgba(63, 78, 101, 0.549);
+  }
+  & div:nth-child(2) {
+    font-weight: 500;
+  }
+}
+
+/// Media ///
+.bottomHeaderContainer {
+  @media (max-width: 1500px) {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+  }
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+/// Media ///

@@ -1,0 +1,58 @@
+.wrapper {
+  display: none;
+}
+.openSortBy {
+  display: flex;
+  cursor: pointer;
+  & div:nth-child(1) {
+    font-weight: 500;
+    line-height: 24px;
+    margin-right: 50px;
+  }
+  & div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #ffca65;
+  }
+}
+.sortByPriceTitle {
+  font-weight: 300;
+  margin-top: 5px;
+  color: #9b9b9b;
+  & span {
+    color: #000;
+  }
+}
+.sortByInputContainer {
+  margin-top: 15px;
+  & input {
+    width: 100px;
+    height: 23px;
+    border-radius: 100px;
+    border: none;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #9e9e9e;
+    background-color: #ffc6504d;
+    transition: 0.2s background-color ease-in-out;
+    &:focus {
+      background-color: #ffc550ab;
+    }
+  }
+  & span:nth-child(2) {
+    margin: 0 10px;
+  }
+}
+
+/// Media ///
+.wrapper {
+  @media (max-width: 600px) {
+    display: inline-block;
+  }
+}
+/// Media ///

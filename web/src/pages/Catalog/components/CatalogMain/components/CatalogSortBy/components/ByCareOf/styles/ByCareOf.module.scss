@@ -1,0 +1,25 @@
+.wrapper {
+  margin-top: 30px;
+}
+.locationItem {
+  width: 70%;
+  font-size: 14px;
+  line-height: 27px;
+  color: #5f5f5fcd;
+  cursor: pointer;
+  transition: 0.2s color ease-in-out;
+  &:hover {
+    color: #000;
+  }
+}
+.locationItemActive {
+  color: #000;
+}
+
+/// Media ///
+.wrapper {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+/// Media ///

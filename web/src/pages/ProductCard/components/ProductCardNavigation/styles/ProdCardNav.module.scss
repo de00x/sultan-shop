@@ -1,0 +1,35 @@
+.wrapper {
+  margin: 50px 0;
+}
+.navItemsContainer {
+  display: flex;
+  & div,
+  a {
+    font-size: 14px;
+    font-weight: 300;
+    color: #989898;
+    transition: 0.3s color ease-in-out;
+    &:not(:last-child) {
+      margin-right: 10px;
+      padding-right: 10px;
+      border-right: 1px dotted #98989880;
+      cursor: pointer;
+    }
+    &:hover {
+      color: #494949;
+    }
+  }
+}
+.productName:hover {
+  color: #989898 !important;
+}
+
+/// Media ///
+.wrapper {
+  @media (max-width: 1500px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/// Media ///

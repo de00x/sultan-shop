@@ -1,0 +1,40 @@
+.wrapper {
+  display: none;
+  padding: 0 30px;
+}
+.btnBackPage {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 12px;
+  margin: 20px 0;
+  & div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    font-weight: 400;
+    border-radius: 100px;
+    margin-right: 5px;
+    background-color: #ffc9658d;
+    cursor: pointer;
+    transition: 0.2s background-color ease-in-out;
+    &:hover {
+      background-color: #ffc965;
+    }
+  }
+}
+.currentLocation {
+  font-size: 22px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+/// Media ///
+.wrapper {
+  @media (max-width: 600px) {
+    display: inline-block;
+  }
+}
+/// Media ///

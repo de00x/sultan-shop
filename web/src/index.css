@@ -1,0 +1,38 @@
+* {
+  font-family: Nunito, Roboto, system-ui, Tahoma, sans-serif;
+  box-sizing: border-box;
+  line-height: 22.4px;
+  font-weight: 400px;
+  list-style: none;
+  font-size: 16px;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+/* Удалить стрелочки в input type number  */
+/* Chrome: */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+/* Firefox: */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+input[type='number']:hover,
+input[type='number']:focus {
+  -moz-appearance: number-input;
+}
+/* Other */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+/* Удалить стрелочки в input type number  */
